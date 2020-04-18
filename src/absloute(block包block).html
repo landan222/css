@@ -38,9 +38,25 @@
   width: 400px;
   height: 70px;
   background: #ccc;
-
-
 }
+
+.out-3-block{
+  width: 500px;
+  height: 250px;
+  border: 1px solid #f00;
+  margin: auto;
+  position: relative;
+}
+.in-3-block{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 70px;
+  background: #ccc;
+}
+
 
 </style>
 
@@ -57,5 +73,15 @@
   <div class="in-2-block">
     (block 包 block)
     absoulute + "left 0, right 0" + “margin auto”
+  </div>
+</div>
+
+</br>
+
+
+<div class="out-3-block">
+  <div class="in-3-block">
+    (block 包 block)
+    absoulute + "left 50%, top 50%" + “translate -50%”
   </div>
 </div>
