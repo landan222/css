@@ -16,6 +16,26 @@
 }
 
 
+
+.out-2-flex{
+  width: 500px;
+  height: 250px;
+  border: 1px solid #f00;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.out-2-flex:before{
+  content: '';
+  flex-grow: .5;
+}
+.in-2-block{
+  width: 400px;
+  flex-grow： 0;  /* 可不写 */
+  background: #ccc;
+}
+
 </style>
 
 <div class="out-1-flex">
@@ -26,3 +46,10 @@
 </div>
 
 </br>
+
+<div class="out-2-flex">
+  <div class="in-2-block">
+    (flex 包 block)
+    Flex + 虚拟flex-grow: .5; + flex 0;
+  </div>
+</div>
