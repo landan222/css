@@ -1,20 +1,20 @@
 <style type="text/css">
 
-.out{
+.out-block{
   width: 500px;
   height: 250px;
   border: 1px solid #f00;
   margin: auto;
   text-align: center;
 }
-.out::before{
+.in-block::before{
   content:'';
   display: inline-block;
   height: 100%;
   width: 0;
   vertical-align: middle;
 }
-.in{
+.in-inline-block{
   width: 400px;
   background: #ccc;
   display: inline-block;
@@ -23,8 +23,8 @@
 </style>
 
 <body>
-  <div class="out">
-    <div class="in">
+  <div class="out-block">
+    <div class="in-inline-block">
       （外面 block 里面 inline-block）
       把里面的 设定为 inline-block, 
       里面也指定一个 虚拟元素 inline-block 高度 100%
