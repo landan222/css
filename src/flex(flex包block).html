@@ -36,6 +36,20 @@
   background: #ccc;
 }
 
+.out-3-flex{
+  width: 500px;
+  height: 250px;
+  border: 1px solid #f00;
+  margin: auto;
+  display: flex;
+}
+
+.in-3-block{
+  margin: auto;
+  width: 400px;
+  background: #ccc;
+}
+
 </style>
 
 <div class="out-1-flex">
@@ -50,6 +64,15 @@
 <div class="out-2-flex">
   <div class="in-2-block">
     (flex 包 block)
-    Flex + 虚拟flex-grow: .5; + flex 0;
+    Flex + 里面虚拟flex-grow: .5; + flex 0;
+  </div>
+</div>
+
+</br>
+
+<div class="out-3-flex">
+  <div class="in-3-block">
+    (flex 包 block)
+    外面 Flex + 里面margin auto;
   </div>
 </div>
