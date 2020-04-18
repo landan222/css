@@ -50,6 +50,43 @@
   background: #ccc;
 }
 
+.out-4-flex{
+  width: 500px;
+  height: 250px;
+  border: 1px solid #f00;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.in-4-block{
+  margin: auto;
+  width: 400px;
+  background: #ccc;
+  align-self: center
+}
+
+.out-5-flex{
+  width: 500px;
+  height: 250px;
+  border: 1px solid #f00;
+  margin: auto;
+  display: flex;
+  align-content: center;
+}
+
+.out-5-flex:before,
+.out-5-flex:after{
+  content: '';
+  display: block;
+  width:100%;
+}
+
+.in-5-block{
+  margin: auto;
+  width: 400px;
+  background: #ccc;
+}
 </style>
 
 <div class="out-1-flex">
@@ -64,7 +101,7 @@
 <div class="out-2-flex">
   <div class="in-2-block">
     (flex 包 block)
-    Flex + 里面虚拟flex-grow: .5; + flex 0;
+    外面 Flex + 里面虚拟flex-grow: .5; + flex 0;
   </div>
 </div>
 
@@ -74,5 +111,16 @@
   <div class="in-3-block">
     (flex 包 block)
     外面 Flex + 里面margin auto;
+  </div>
+</div>
+
+
+</br>
+
+<div class="out-5-flex">
+  <div class="in-5-block">
+    (flex 包 block)
+    外面 Flex + 里面align-content: center;
+
   </div>
 </div>
