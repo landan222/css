@@ -7,7 +7,6 @@
     writing-mode: tb-lr; /* for ie11 */
     writing-mode: vertical-lr;
     text-align: center;
-    margin:0 auto;
 	}
 
 	.in-2-block {
@@ -26,6 +25,11 @@
 <div class="out-2-block">
    <div class="in-2-block">
       (block 包 block)
-
+      writing-mode
    </div>
 </div>
+
+<!-- 
+
+使用 writing-mode 將一整個文字容器變成直書，接著將此容器利用 text-align: center 來達到垂直置中的目的，白話一點的解說的話，就是你把原本橫排的文字，變成直排了，所以原本橫排用到的水平對齊中間(text-align: center)，就變成了控制直排的中間了（垂直置中），原理就是這麼簡單。
+-->
