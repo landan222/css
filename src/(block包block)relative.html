@@ -1,0 +1,54 @@
+<style type="text/css">
+	.out-1-block{
+   	width: 500px;
+   	background: red;
+   	height: 400px;
+   	margin: auto;
+	}
+
+	.in-1-block {
+
+	  width: 400px;
+     background: #ccc;
+     position: relative;
+     top:calc((100% - 70px) / 2);
+     margin:auto;
+     height: 70px;
+	}
+
+  .out-2-block{
+    width: 500px;
+    background: red;
+    height: 400px;
+    margin: auto;
+  }
+
+  .in-2-block {
+
+    width: 400px;
+     background: #ccc;
+     position: relative;
+     top: 50%;
+     transform: translate(0%, -50%);
+     margin:auto; /* transform 不可以搭配 margin*/
+     height: 70px;
+  }
+</style>
+
+
+</br>
+<div class="out-1-block">
+   <div class="in-1-block">
+      (block 包 block)
+      里面 relative + 里面top calc( (100% - 自己)/2)
+   </div>
+</div>
+
+</br>
+
+<div class="out-2-block">
+   <div class="in-2-block">
+      (block 包 block)
+      里面 relative + 里面 top 50% , 里面 translate -50% Y
+   </div>
+</div>
